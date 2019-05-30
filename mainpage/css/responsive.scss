@@ -1,0 +1,167 @@
+@media only screen and (max-width: 991px){
+    .layout{
+        .container{
+            max-width: 100%;
+        }
+        .bg-video{
+            .container{
+                width: 100%;
+            }   
+        }  
+        .header{
+            .container{
+                width: 100%;
+                .logo{
+                    .img-block{
+                        margin: 0;
+                    }
+                }
+                .language{
+                    padding: 0 5px;
+                }
+            }
+        }
+        .nav-btn{
+            .btn{
+                display: block;
+                white-space: normal;
+            }
+            .menu{
+                display: flex;
+                flex-wrap: nowrap;
+                .btn-bt{
+                    font-size: 15px;
+                }
+            }
+        }
+        .content{
+            .container{
+                padding: 0 50px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    .layout{  
+        .header{
+            .container{
+                display: flex; 
+                .logo{
+                    .img-block{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .language{
+                    display: flex;
+                    justify-content: center;
+                    .img-block{
+                        width: 60px;
+                        height: 45px;
+                    }
+                    .tiengviet{
+                        &:before{
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-btn{
+            .menu{
+                .btn-bt{
+                    font-size: 13px;
+                    padding: 15px;
+                }
+            }
+        }
+        .content{
+            .title{
+                h1{
+                font-size: 35px;
+                }
+            }   
+            .box-form{
+                padding: 30px 0;
+                .group-1,.group-2{
+                    display: block;
+                    .mainpage-form{
+                        margin: 0 auto;
+                        width: 90%;
+                        // font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px){
+    .layout{
+        .container{
+            max-width: 100%;
+        }
+        
+        .nav-btn{
+            .menu{
+                .btn-bt{
+                    font-size: 11px;
+                }
+            }
+            .logo{
+                .img-block{
+                    width: 130px !important;
+                    height: 100px !important;
+
+                    img{
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            } 
+            .language{
+                display: flex;
+                align-items: center;
+                padding-right: 5px;
+                .img-block{
+                    width: 120px;
+                    height: 70px;
+                    img{
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+        }
+        .content{
+            .container{
+                padding: 0 30px;
+            }
+            .box-form{
+                padding: 30px 0;
+                .group-1,.group-2{
+                    display: block;
+                    .mainpage-form{
+                        margin: 0 auto;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:480px){
+    .layout{
+        .content{
+            .box-form{
+                padding: 30px 0;
+                .group-1,.group-2{
+                    display: block;
+                    .mainpage-form{
+                        padding: 0 30px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@media only screen and (max-width: 991px) {
+  .layout .container {
+    max-width: 100%; }
+  .layout .bg-video .container {
+    width: 100%; }
+  .layout .header .container {
+    width: 100%; }
+    .layout .header .container .logo .img-block {
+      margin: 0; }
+    .layout .header .container .language {
+      padding: 0 5px; }
+  .layout .nav-btn .btn {
+    display: block;
+    white-space: normal; }
+  .layout .nav-btn .menu {
+    display: flex;
+    flex-wrap: nowrap; }
+    .layout .nav-btn .menu .btn-bt {
+      font-size: 15px; }
+  .layout .content .container {
+    padding: 0 50px; } }
+@media only screen and (max-width: 767px) {
+  .layout .header .container {
+    display: flex; }
+    .layout .header .container .logo .img-block {
+      width: 100px;
+      height: 100px; }
+    .layout .header .container .language {
+      display: flex;
+      justify-content: center; }
+      .layout .header .container .language .img-block {
+        width: 60px;
+        height: 45px; }
+      .layout .header .container .language .tiengviet:before {
+        height: 80px; }
+  .layout .nav-btn .menu .btn-bt {
+    font-size: 13px;
+    padding: 15px; }
+  .layout .content .title h1 {
+    font-size: 35px; }
+  .layout .content .box-form {
+    padding: 30px 0; }
+    .layout .content .box-form .group-1, .layout .content .box-form .group-2 {
+      display: block; }
+      .layout .content .box-form .group-1 .mainpage-form, .layout .content .box-form .group-2 .mainpage-form {
+        margin: 0 auto;
+        width: 90%; } }
+@media only screen and (max-width: 576px) {
+  .layout .container {
+    max-width: 100%; }
+  .layout .nav-btn .menu .btn-bt {
+    font-size: 11px; }
+  .layout .nav-btn .logo .img-block {
+    width: 130px !important;
+    height: 100px !important; }
+    .layout .nav-btn .logo .img-block img {
+      max-width: 100%;
+      max-height: 100%; }
+  .layout .nav-btn .language {
+    display: flex;
+    align-items: center;
+    padding-right: 5px; }
+    .layout .nav-btn .language .img-block {
+      width: 120px;
+      height: 70px; }
+      .layout .nav-btn .language .img-block img {
+        max-width: 100%;
+        max-height: 100%; }
+  .layout .content .container {
+    padding: 0 30px; }
+  .layout .content .box-form {
+    padding: 30px 0; }
+    .layout .content .box-form .group-1, .layout .content .box-form .group-2 {
+      display: block; }
+      .layout .content .box-form .group-1 .mainpage-form, .layout .content .box-form .group-2 .mainpage-form {
+        margin: 0 auto;
+        width: 90%; } }
+@media only screen and (max-width: 480px) {
+  .layout .content .box-form {
+    padding: 30px 0; }
+    .layout .content .box-form .group-1, .layout .content .box-form .group-2 {
+      display: block; }
+      .layout .content .box-form .group-1 .mainpage-form, .layout .content .box-form .group-2 .mainpage-form {
+        padding: 0 30px;
+        width: 100%; } }
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,374 @@
+// staffpage2
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+.layout{
+    .container{
+        padding: 0;
+        margin: 0 10rem;
+    }
+    .header{
+        margin: 50px 0;
+        .container{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            .logo{
+                .img-block{
+                    width: 180px;
+                    height: 160px;
+                    margin-left: 45px;
+                    img{
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            } 
+            .language{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                padding-right: 5px;
+                .img-block{
+                    width: 120px;
+                    height: 70px;
+                    .img{
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+                .tiengviet{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    &:before{
+                        content: '';
+                        display: block;
+                        height: 120px;
+                        width: 2px;
+                        background-color: #86909078;
+                        border-radius:50%;
+                        margin: 0 25px;
+                        background-color: #14b4f0;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+.staff-page__main{
+    .main{
+        .container{
+            background-color: #ececec;
+            padding: 70px 150px;
+            .form-heading{
+                padding: 15px 30px;
+                background: -webkit-gradient(linear, left top, right top, from(rgba(2,0,36,1)), color-stop(0%, rgba(0,10,98,1)), to(rgba(6,149,206,1)));
+                background: -webkit-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(0,10,98,1) 0%, rgba(6,149,206,1) 100%);
+                background: -o-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(0,10,98,1) 0%, rgba(6,149,206,1) 100%);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,10,98,1) 0%, rgba(6,149,206,1) 100%);
+                color: white;
+                h2{
+                                    
+                    font-size: 45px;
+                    font-size: 4.5rem;
+                }
+            }
+            .form-field{
+                padding: 35px 75px;
+                background-color: white;
+                border: 1px solid #0070b7;
+                .form-input{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    width: 100%;
+                    .field{
+                        width: 100%;
+                        padding: 25px; 
+                    }
+                }
+            }
+            label{
+                font-size: 18px;
+                font-weight: 400;
+                color: #6d6d6d;
+                span{
+                    color: red;
+                }
+            }
+            input{
+                display: block;
+                margin: 10px 0;
+                padding: 10px 5px;
+                width: 100%;
+                border:  1px solid #6d6d6d;
+                border-radius: 5px;
+                &:hover,&:focus{
+                    outline: none;
+
+                }
+                &:focus{
+                    box-shadow: 0px 0 4px 0px #0070b7; 
+                }
+            }
+            button{
+                display: block;
+                background-color: #0070b7;
+                color: white;
+                border: 0;
+                outline: 0;
+                padding: 15px 90px;
+                margin: 50px auto 0;
+                border-radius: 40px;
+                font-size: 22px;
+            }
+        }
+    }
+    .img-content{
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .icon-title{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        margin: 20px 0;
+        .col{
+            margin: 0 80px;
+            &:nth-child(2),
+            &:nth-child(3){
+                margin-top: 20px;
+            }
+        }
+        .icon{
+            background-color: #0070b7; 
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            border-radius: 50%;
+            position: relative;
+            margin: auto;
+            &::before{
+                content: '';
+                position: absolute;
+                border: 1px solid #0070b7;
+                top: -4px;
+                left: -4px;
+                right: -4px;
+                bottom: -4px;
+                border-radius: 50%;
+            }
+        }
+        .title{
+            text-align: center;
+            padding: 20px;
+            color: #6d6d6d;
+            white-space: nowrap;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+// responsive
+@media only screen and (max-width: 2000px){
+    .layout{
+        .container{
+            // width: 1305px;
+            padding: 0;
+            margin: 0 10rem;
+        }
+    }
+}
+.staff-page__main {
+    .main{
+        .container{
+            padding: 7rem 10rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1411px){
+    .layout{
+        .container{
+            // width: 1305px;
+            padding: 0;
+            margin: 0 10rem;
+        }
+    }
+}
+.staff-page__main{
+    .main{
+        .container{
+            padding: 7rem 10rem;
+        }
+    }
+}
+@media only screen and (max-width: 991px){
+    .layout{
+        .container{
+            width: 100%;
+            padding: 0rem 7rem;
+        }
+        .header{
+            .container{
+                margin: 0 auto;
+                .logo{
+                    .img-block{
+                        margin: 0;
+                    }
+                }
+                .language{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+.staff-page__main{
+    .main {
+        .container{
+            padding: 7rem 7rem;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .layout{
+        .header{
+            .container{
+                display: block; 
+                .logo{
+                    .img-block{
+                        margin: 50px auto;
+                    }
+                }
+                .language{
+                    display: flex;
+                    justify-content: center;
+                    .img-block{
+                        width: 90px;
+                        height: 60px;
+                        img {
+                            max-width: 100%;
+                            max-height: 100% ;
+                        }
+                    }
+                    .tiengviet{
+                        &:before{
+                            content: '';
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .staff-page__main{
+        .main{
+            .container{
+                padding: 20px;
+                margin: 0;
+                .form-heading{
+                    h2{
+                        font-size: 3.5rem;
+                    }
+                }
+                .form-field{
+                    padding: 30px;
+                    .form-input{
+                        display: block;
+                        width: 95%;
+                    }
+                }
+                button{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .icon-title{
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .layout{
+        .header{
+            .container{
+                display: block; 
+                .logo{
+                    display: block;
+                    .img-block{
+                        margin: 50px auto;
+                    }
+                }
+                .language{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .staff-page__main{
+        .main{
+            .container{
+                padding: 20px;
+                .form-heading{
+                    h2{
+                        font-size: 3.5rem;
+                    }
+                }
+                .form-field{
+                    padding: 0;
+                    .form-input{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                button{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .icon-title{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+    }
+}
